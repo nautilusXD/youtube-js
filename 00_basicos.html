@@ -11,6 +11,8 @@
   <h1>Fundamentos JavaScript</h1>
   <script>
       /* **********     Curso JavaScript: 3. Variables: var 🥊VS🥊 let - #jonmircha     ********** */
+    
+/*
     var hola = "Hola Mundo";
     console.log(hola);
     // ambito de bloque
@@ -30,6 +32,7 @@
     
     console.log("*********");
 
+*/    
 
     
 
@@ -37,6 +40,7 @@
 
 
     /* **********     Curso JavaScript: 4. Constantes (const) - #jonmircha     ********** */
+/*    
     let a;
     const PI = 3.1416;
     console.log(PI);
@@ -62,8 +66,10 @@
     console.log(objeto);
     console.log(colores);
 
-    /* **********     Curso JavaScript: 5. Cadenas de Texto (Strings) - #jonmircha     ********** */
+*/    
 
+    /* **********     Curso JavaScript: 5. Cadenas de Texto (Strings) - #jonmircha     ********** */
+/*
 
     let nombre = "samuel";
     let apellido = "Espinoza";
@@ -83,10 +89,10 @@
       lorem.trim(),
       lorem.split(" ")
     );
+*/
 
-
-    /* **********     Curso JavaScript: 6. Template Strings - #jonmircha     ********** */
-
+    // **********     Curso JavaScript: 6. Template Strings - #jonmircha     ********** 
+/*
 
   let nombre1 = "Samuel";
   let apellido1 = "Espinoza";
@@ -98,7 +104,7 @@
   // Interpolacion
   //Template.string
 
-  let saludo2=`Hola mi nombre es ${nombre} ${apellido}.`;
+  let saludo2=`Hola mi nombre es ${nombre1} ${apellido1}.`;
 
   console.log(saludo2);
 
@@ -115,7 +121,7 @@
     </ul>
   `
   console.log(ul2);
-
+*/
   /*
     let ul3 = "<ul>";
     ul3 += "<li> Primavera</li>";
@@ -132,7 +138,7 @@
 
 
     /* **********     Curso JavaScript: 7. Números (Numbers) - #jonmircha     ********** */
-
+/*
     let A = 2
     let B = new Number(1);
     let C = 7.19;
@@ -149,9 +155,9 @@
     console.log(C + parseFloat(D));
     console.log(C + Number.parseInt(D));
     console.log(C + Number.parseFloat(D));
-
+*/
     /* **********     Curso JavaScript: 8. Booleans - #jonmircha     ********** */
-
+/*
     let verdadero = true;
     let falso = false;
     let v = Boolean(true);  
@@ -163,11 +169,11 @@
     console.log(Boolean(-7));
     console.log(Boolean(""));
     console.log(Boolean(" "));
-
+*/
     /* **********     Curso JavaScript: 9. undefined, null & NaN - #jonmircha     ********** */
 
     //undefined indica que no se ha inicializado una variable y que el valor está ausente
-
+/*
     let indefinida;
     console.log(indefinida);
 
@@ -179,7 +185,7 @@
     let noEsUnNumero = "Hola" * 3.7;
     console.log(noEsUnNumero);
 
-
+*/
 
     /* **********     Curso JavaScript: 10. Funciones - #jonmircha     ********** */
 
@@ -191,7 +197,7 @@
     */
 
     //Declaración de función
-
+/*
     function estoEsUnaFuncion(){
       console.log("Uno");
       console.log("Dos");
@@ -204,7 +210,7 @@
 
     function unaFuncionQueDevuelveValor(){
       console.log("Uno");
-      /*return 19;*/
+      //return 19;
       console.log("Dos");
       console.log("Tres");
       return "La función ha retornado una cadena de texto";
@@ -227,8 +233,8 @@
     }
 
     //Funcion Anonima
-    /* Arrow function 
-    const funcionExpresada = ()=>{}*/
+    // Arrow function 
+    //const funcionExpresada = ()=>{}
     
     const funcionExpresada = function(){
       console.log("Esto es una función expresada, es decir, una función que se le ha asignado como valor a una variable, si invocamos esta función antes de su definición JS nos dirá 'Cannot access 'funcionExpresada' before initialization'")
@@ -236,7 +242,7 @@
     funcionExpresada();
 
 
-    /* **********     Curso JavaScript: 11. Arreglos (Arrays) - #jonmircha     ********** */
+    // **********     Curso JavaScript: 11. Arreglos (Arrays) - #jonmircha     **********
 
     const arreglo = [];
     const arregloB = [1, true, "Hola",["A", "B","C",["1","2","3"]]];
@@ -273,292 +279,206 @@
         console.log(`<li id=${index}>${el}</li>`);
       } 
       );
-
+*/
     /* **********     Curso JavaScript: 12. Objetos - #jonmircha     ********** */
+/*
+    let arregloA1 = new String("Hola");
+    console.log(arregloA1)
 
-    /* let a = new String("Hola");
-    //console.log(a)
+    const arregloB2 = {}
+    console.log(arregloB2);
 
-    const b = {}
-    console.log(b);
+    const arregloC2 = new Object();
+    console.log(arregloC2);
 
-    const c = new Object();
-    console.log(c);
- */
-    /* dentro de un objeto a las variables se le van a llamar atributos/propiedades y a las funciones se les llama métodos */
-    /*     const jon = {
-          nombre: "Jon",
-          apellido: "MirCha",
-          edad: 35,
-          pasatiempos: ["Correr", "Hacer ejercicio", "Dar clases"],
-          soltero: false,
-          contacto: {
-            email: "jonmircha@gmail.com",
-            twitter: "@jonmircha",
-            movil: "5215512345678"
-          },
-          saludar: function () {
-            console.log(`Hola :)`)
-          },
-          decirMiNombre: function () {
-            console.log(`Hola me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años y me puedes seguir como ${this.contacto.twitter} en twitter.`)
-          }
-        }
+    const samuel = {
+      nombre : "Samuel",
+      apellido: "Espinoza",
+      edad : 25,
+      pasatiempos : ["Correr","Hacer Ejercicios","Ver Tv"],
+      Soltero : false,
+      contacto : {
+        email : "samuelesponline@gmail.com",
+        Twitter : "@colmenarezsamuel",
+        movil : "573502186335"
+      }, 
+      saludar : function () {
+        console.log("Hola :)");
+      }, 
+      decirMiNombre: function(){
+        console.log(`Hola me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años y me puedes seguir como ${this.contacto.Twitter} en Twitter y mi pasatiempo es ${this.pasatiempos[2]}`); 
+      }
+    }
 
-        console.log(jon);
-        console.log(jon["nombre"]);
-        console.log(jon["apellido"]);
-        console.log(jon.nombre);
-        console.log(jon.apellido);
-        console.log(jon.edad);
-        console.log(jon.soltero);
-        console.log(jon.pasatiempos);
-        console.log(jon.pasatiempos[1]);
-        console.log(jon.contacto);
-        console.log(jon.contacto.twitter);
-        jon.saludar();
-        jon.decirMiNombre();
-
-        console.log(Object.keys(jon));
-        console.log(Object.values(jon));
-        console.log(jon.hasOwnProperty("nombre"));
-        console.log(jon.hasOwnProperty("nacimiento"));
-     */
+    console.log(samuel);
+    console.log(samuel["nombre"]);
+    console.log(samuel["apellido"]);
+    console.log(samuel.contacto.email);
+    console.log(samuel.pasatiempos[2]);
+    samuel.saludar();
+    samuel.decirMiNombre();
+    
+    console.log(Object.keys(samuel));
+    console.log(Object.values(samuel));
+    console.log(samuel.hasOwnProperty("nombre"));
+    console.log(samuel.hasOwnProperty("nacimiento"));
 
 
-
-
-
+*/
     /* **********     Curso JavaScript: 13. Tipos de Operadores - #jonmircha     ********** */
 
-    /* Operadores */
-    /* Aritméticos:  + - * / % ()  */
-
-    /* let a = 5 + (5 - 10) * 3;
-    let modulo = 5 % 2;
-
+    // Operadores
+    // Aritméticos:  + - * / % ()
+    //  Relacionales: >, <,   >=, <=, ==, ===, !=, !==
+    // = 1 igual es asignación  de variable
+    // == 2 iguales es comparacion de valores
+    // === 3 igulaes es comparación de tipo de dato y de valor
+    // Lógicos
+    //  ! - Not : Niega, es decir lo que es verdadero lo vuelve falso y viceversa
+    //  || - Or: Cuando tengo 2 o más condiciones, con que una se cumpla, es decir sea verdadera, el OR será verdadero.
+    //  && - And: Cuando tengo 2 o más condiciones, todas tienen que cumplirse, es decir ser verdaderas, para que AND se valide */
+/*    
+    let a = 5 + 5 - 10 * 3;
     console.log(a);
+    let b = 5 + (5 - 10) * 3;
+    console.log(b);
+    let modulo = 5 % 2;
     console.log(modulo);
- */
 
-    /*  Relacionales: >, <,   >=, <=, ==, ===, !=, !== */
+    console.log(8>9);
+    console.log(9>8);
+    console.log(8>=9);
+    console.log(9>=8);
+    console.log(7<7);
+    console.log(7<=7);
 
-    /* console.log(8 > 9);
-    console.log(9 > 8);
-    console.log(8 >= 9);
-    console.log(9 >= 8);
-    console.log(7 < 7);
-    console.log(7 <= 7); */
-
-    /*
-    = 1 igual es asignación  de variable
-    == 2 iguales es comparacion de valores
-    === 3 igulaes es comparación de tipo de dato y de valor
-    */
-
-    /* console.log(7 == 7);
+    console.log(7 == 7);
     console.log("7" == 7);
     console.log(0 == false);
 
     console.log(7 === 7);
     console.log("7" === 7);
-    console.log(0 === false); */
+    console.log(0 === false);
 
-    /* Incremento Decremento */
-    /* let i = 2;
+    let i = 1;
+    i = i+2;
+    console.log(i);
 
-    console.log(i++);
-    console.log(++i); */
+    i += 3;
+    console.log(i);
 
-    //i = i + 2;
-    //i *= 3;
+    i *= 2;
+    console.log(i);
 
-    //operador unario
-    /* i++;
-    i--;
-    ++i;
-    --i;
-    console.log(i); */
-
-    /*
-    Lógicos
-      ! - Not : Niega, es decir lo que es verdadero lo vuelve falso y viceversa
-      || - Or: Cuando tengo 2 o más condiciones, con que una se cumpla, es decir sea verdadera, el OR será verdadero.
-      && - And: Cuando tengo 2 o más condiciones, todas tienen que cumplirse, es decir ser verdaderas, para que AND se valide */
-    /*
     console.log(!true);
-    console.log(!false);
-    console.log((9 === 9) || ("9" === 9));
-    console.log((9 === 9) && ("9" === 9));
-    console.log((9 === 9) && ("9" === "9")); */
-
-
-
-
-
+    console.log(!false); // NOT
+    console.log( 9 === 9 || "9" === 9); // OR
+    console.log((9===9)&&(0==="0"));
+*/    
     /* **********     Curso JavaScript: 14. Condicionales - #jonmircha     ********** */
-
-    /* if - else */
-
-    /* let edad = 9;
-
-    if (edad > 17) {
-      console.log("Eres mayor de Edad");
-    } else {
-      console.log("Eres menor de Edad");
+/*
+    // if - else
+    let edad = 135;
+    if(edad>=18){
+      console.log(`Tienes ${edad} años, Eres mayor de edad`)
+    }else{
+      console.log(`Tienes ${edad} años, Eres menor de edad`)
     }
+    // if - else if - else
+  
+    let hora = 9;
 
-    if (edad >= 18) {
-      console.log("Eres mayor de Edad");
-    } else {
-      console.log("Eres menor de Edad");
+    if((hora >= 0) && (hora <=5)){
+      console.log(`Dejame dormir, son las ${hora}hrs`);
+    }else if((hora >= 6) && (hora <=11)){
+      console.log(`Buenos días, son las ${hora}hrs`);
+    }else if((hora >= 12) && (hora <=18)){
+      console.log(`Buenas tardes, son las ${hora}hrs`);
+    }else{
+      console.log(`Buenas noches, son las ${hora}hrs`);
     }
+    // Operador Ternario (condición) ? verdadero : falsa
+    let eresMayor = (edad >=18) 
+    ? `Tienes ${edad} años, Eres mayor de edad` 
+    : `Tienes ${edad} años, Eres menor de edad`;
+    console.log(eresMayor);
 
-    if (edad < 18) {
-      console.log("Eres menor de Edad");
-    } else {
-      console.log("Eres mayor de Edad");
-    }
+    // Switch case
 
-    if (edad <= 17) {
-      console.log("Eres menor de Edad");
-    } else {
-      console.log("Eres mayor de Edad");
-    } */
+    let dia = 15;
 
-    /* if - else if - else */
-    /*
-      Déjame Dormir - 0hrs - 5hrs
-      Buenos dias 6hrs - 11hrs
-      Buenas tardes 12hrs - 18hrs
-      Buenas noches 19hrs - 23hrs
-    */
-    /* let hora = 23;
-    if (hora >= 0 && hora <= 5) {
-      console.log("Déjame dormir");
-    } else if (hora >= 6 && hora <= 11) {
-      console.log("Buenos días");
-    } else if (hora >= 12 && hora <= 18) {
-      console.log("Buenas tardes");
-    } else {
-      console.log("Buenas noches");
-    }
-
-    if (hora < 6) {
-      console.log("Déjame dormir");
-    } else if (hora > 5 && hora < 12) {
-      console.log("Buenos días");
-    } else if (hora > 11 && hora < 19) {
-      console.log("Buenas tardes");
-    } else {
-      console.log("Buenas noches");
-    } */
-
-    /* Operador Ternario (condición) ? verdadero : falsa */
-    /*  console.log("Operador Ternario");
-     let eresMayor = (edad >= 18)
-       ? "Eres mayor de Edad"
-       : "Eres menor de Edad";
-     console.log(eresMayor); */
-
-    /* switch - case */
-    /*
-    domingo -0
-    lunes - 1
-    martes - 2
-    miércoles - 3
-    jueves - 4
-    viernes - 5
-    sábado - 6
-    */
-    /* let dia = 2;
-
-    switch (dia) {
+    switch (dia){
       case 0:
-        console.log("Domingo");
-        break;
+      console.log("Domingo");
+      break;
       case 1:
-        console.log("Lunes");
-        break;
+      console.log("Lunes");
+      break;
       case 2:
-        console.log("Martes");
-        break;
+      console.log("Martes");
+      break;
       case 3:
-        console.log("Miércoles");
-        break;
+      console.log("Miercoles");
+      break;
       case 4:
-        console.log("Jueves");
-        break;
+      console.log("Jueves");
+      break;
       case 5:
-        console.log("Viernes");
-        break;
+      console.log("Viernes");
+      break;
       case 6:
-        console.log("Sábado");
-        break;
+      console.log("Sabado");
+      break;
       default:
-        console.log("El día no existe");
+      console.log("El dia no existe");
         break;
     }
- */
-
-
-
-
-
+*/
     /* **********     Curso JavaScript: 15. Ciclos (Loops) - #jonmircha     ********** */
 
-    /*  let contador = 0;
+/*    
+    let contador = 0;
 
-     while (contador < 10) {
-       console.log("while " + contador);
-       contador++;
-     }
-
-
-     do {
-       console.log("do while " + contador);
-       contador++;
-     } while (contador < 10); */
-
-    /* for (inicialización de variable; condición; decremento o incremento) {
-      sentencias que ejecuta el for
-      sentencias que ejecuta el for
-      sentencias que ejecuta el for
-    } */
-
-    /* for (let i = 0; i < 10; i++) {
-      console.log("for " + i);
+    while(contador >10){      
+      console.log(`while ${contador}`);
+      contador++;
     }
 
-    let numeros = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+    do{
+      console.log(`do while ${contador}`);
+      contador++;
+    }while(contador < 10);
 
-    for (let i = 0; i < numeros.length; i++) {
-      console.log(numeros[i]);
+    for (let i = 0; i<8; i++){
+      console.log(`for ${i}`);
     }
 
-    const jon = {
-      nombre: "Jon",
-      apellido: "MirCha",
-      edad: 35
+    const numeros = [10,20,30,40,50,60,70,80,90];
+    
+    for(let i = 0; i<numeros.length; i++){
+      console.log(`numero ${numeros[i]}`);
     }
 
-    for (const propiedad in jon) {
-      console.log(`Key: ${propiedad}, Value: ${jon[propiedad]}`);
+    const samuel = {
+      nombre : "samuel",
+      apellido : "Espinoza",
+      edad : 25
     }
 
-    for (const elemento of numeros) {
-      console.log(elemento);
+    for (const propiedad in samuel) {  // para recorrer objetos
+      console.log(`Key:${propiedad},Value:${samuel[propiedad]}`);
     }
 
-    let cadena = "Hola Mundo";
+    for (const elemento of numeros) { // para arreglos
+      console.log(elemento);  
+    }
 
+    let cadena = "Hola mundo";
     for (const caracter of cadena) {
       console.log(caracter);
-    } */
+    }
 
-
-
-
+*/
 
     /* **********     Curso JavaScript: 16. Manejo de Errores - #jonmircha     ********** */
     /*  try {
@@ -590,161 +510,101 @@
 
 
     /* **********     Curso JavaScript: 17. break & continue - #jonmircha     ********** */
-
-    /* const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-
-    for (let i = 0; i < numeros.length; i++) {
-      if (i === 5) {
-        break;
-      }
-      console.log(numeros[i]);
+/*
+    try{
+      console.log("Codigo a evaluar");
+      //noExiste;
+      console.log("Codigo a evaluar");
+      console.log("Codigo a evaluar");
+    }catch(error){
+      console.log("Captura el error del try");
+      console.log(eror);
+    }finally{
+      console.log("Finally se ejecuta siempre al final de un bloque try catch");
     }
 
-    for (let i = 0; i < numeros.length; i++) {
-      if (i === 5) {
+    try{
+      let numero = 10;
+      if(isNaN(numero)){
+        throw new Error(`${numero} No es un numero`);
+      }
+      console.log(numero*numero);
+    }catch(error){
+      console.log(`Se produjo el siguiente error ${error}`);
+    }finally{}
+
+*/
+
+    /* **********     Curso JavaScript: 18. Destructuración - #jonmircha     ********** */
+
+/*    
+    const numeros=[1,2,3,4,5,6,7,8,9,0];
+
+    for (let i = 0; i<numeros.length; i++){
+      if(i===5){
+        //break;
         continue;
       }
       console.log(numeros[i]);
-    } */
-
-
-
-
-
-    /* **********     Curso JavaScript: 18. Destructuración - #jonmircha     ********** */
-    /* const numeros = [1, 2, 3];
-
-    //Sin destructuración
-    let uno = numeros[0],
-      dos = numeros[1],
-      tres = numeros[2];
-
-    console.log(uno, dos, tres);
-
-    //Con destructuración
-    const [one, two, three] = numeros;
-    console.log(one, two, three);
-
-    const persona = {
-      nombre: "Jon",
-      apellido: "MirCha",
-      edad: 35
-    };
-
-    let { nombre, edad, apellido } = persona;
-    console.log(nombre, apellido, edad); */
-
-
-
-
+    }
+*/
 
     /* **********     Curso JavaScript: 19. Objetos literales - #jonmircha     ********** */
-    /* let nombre = "kEnAi",
-      edad = 7;
 
+/*
+    let nombre = "samuel";
+    let edad = 7;
     const perro = {
-      nombre: nombre,
-      edad: edad,
-      ladrar: function () {
-        console.log("guauu guauu!!!")
+      nombre : nombre,
+      edad : edad,
+      ladrar: function(){
+        console.log("guau guau");
       }
     }
 
-    console.log(perro);
-    perro.ladrar()
+    console.log(perro.ladrar());
 
-    const dog = {
+    const dog={
       nombre,
       edad,
-      raza: "Callejero",
-      ladrar() {
-        console.log("guauu guauu guauu!!!")
+      raza:"callejero",
+      ladrar(){
+        console.log("Saluda");
       }
     }
 
     console.log(dog);
-    dog.ladrar(); */
-
-
-
-
+*/
 
     /* **********     Curso JavaScript: 20. Parámetros REST & Operador Spread - #jonmircha     ********** */
-    /* function sumar(a, b, ...c) {
-      let resultado = a + b;
 
-      c.forEach(function (n) {
+    /*
+    function sumar(a, b, ...c){
+      let resultado = a+b;
+      c.forEach(function (n){
         resultado += n
       });
-
+        
       return resultado;
-    }
+    } 
+    
+    console.log(sumar(1,2));
+    console.log(sumar(1,2,3));
+    console.log(sumar(1,2,3,4));
+    console.log(sumar(1,2,3,4,5));
+    console.log(sumar(1,2,3,4,5,6));
+    console.log(sumar(1,2,3,4,5,6,7));
 
-    console.log(sumar(1, 2));
-    console.log(sumar(1, 2, 3));
-    console.log(sumar(1, 2, 3, 4));
-    console.log(sumar(1, 2, 3, 4, 5));
-    console.log(sumar(1, 2, 3, 4, 5, 6));
-    console.log(sumar(1, 2, 3, 4, 5, 6, 7));
+    const array1 = [1,2,3,4,5];
+    const array2 = [6,7,8,9,0];
 
-
-
-    const arr1 = [1, 2, 3, 4, 5],
-      arr2 = [6, 7, 8, 9, 0];
-
-    console.log(arr1, arr2);
-
-    const arr3 = [...arr1, ...arr2];
-    console.log(arr3); */
-
-
-
-
+    const array3 = [...array1,...array2];
+    console.log(array3);
+    */
 
     /* **********     Curso JavaScript: 21. Arrow Functions - #jonmircha     ********** */
-    /* const saludar = () => console.log(`Hola`);
-    saludar(); */
-
-    /* const saludar = nombre => console.log(`Hola ${nombre}`);
-    saludar("Irma");
- */
-    /* const sumar = function (a, b) {
-      return a + b;
-    } */
-
-    /*  const sumar = (a, b) => a + b;
-
-     console.log(sumar(9, 9));
-
-     const funcionDeVariasLineas = () => {
-       console.log("Uno");
-       console.log("Dos");
-       console.log("Tres");
-     }
-
-     funcionDeVariasLineas();
-
-     const numeros = [1, 2, 3, 4, 5];
-
-     numeros.forEach((el, index) => console.log(`${el} esta en la posición ${index}`));
-
-  */
-    /*   function Perro() {
-        console.log(this);
-      }
-
-      Perro(); */
-
-    /*     const perro = {
-          nombre: "kenai",
-          ladrar() {
-            console.log(this)
-          }
-        }
-
-        perro.ladrar(); */
-
-
+    
+dasd
 
 
 
