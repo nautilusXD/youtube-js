@@ -116,6 +116,7 @@ export function ContactForm() {
 
         d.addEventListener("keyup", (e) => {
             if (e.target.matches(".contact-form [required]")) {
+
                 let $input = e.target,
                     pattern = $input.pattern || $input.dataset.pattern;
 
